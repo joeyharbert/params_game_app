@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     get '/game' => 'games#name'
-    get "/guess" => 'games#guess'
+    get '/guess' => 'games#guess'
+    get '/guess_number/:guess' => 'games#guess'
   end
 
 end
