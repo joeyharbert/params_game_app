@@ -1,2 +1,2 @@
-json.name = @name.upcase
-json.message = @message
+json.name  @name
+json.message  @message

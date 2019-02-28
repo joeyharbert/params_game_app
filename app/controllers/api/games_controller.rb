@@ -4,7 +4,8 @@ class Api::GamesController < ApplicationController
     if @name == nil
       @name = "Enter your name"
     end
-    if @name[0].downcase == 'a'
+    @name.upcase!
+    if @name[0] == 'A'
       @message = "Hey, your name starts with the first letter of the alphabet!"
     else
       @message = "Aw, your name doesn't start with the first letter of the alphabet..."
