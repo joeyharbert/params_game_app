@@ -1,1 +1,1 @@
-json.message "Got ya name"
+json.name = @name.upcase
