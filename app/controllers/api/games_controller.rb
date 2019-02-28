@@ -11,4 +11,8 @@ class Api::GamesController < ApplicationController
     end
     render 'name.json.jbuilder'
   end
+
+  def guess
+    render 'guess.json.jbuilder'
+  end
 end
